@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+.hero {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(12, 3, 51, 0.3), rgba(12, 3, 51, 0.3));
+  position: relative;
+  padding: 0 5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 20px 8%;
+  display: flex;
+  align-items: center;
+  justify-content: safe;
+}
+
+nav .logo {
+  width: 80px;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin-left: 40px;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 17px;
+}
+.content {
+  text-align: center;
+}
+.content h1 {
+  font-size: 160px;
+  color: #fff;
+  font-weight: 600;
+  transition: 0.5s;
+}
+.content h1:hover {
+  -webkit-text-stroke: 2px #fff;
+  color: transparent;
+}
+.content a {
+  text-decoration: none;
+  display: inline-block;
+  color: #fff;
+  font-size: 24px;
+  border: 2px solid #fff;
+  padding: 14px;
+  border-radius: 50px;
+  margin-top: 20px;
+}
+.back-video {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+}
+
+@media (min-aspect-ratio: 16/9) {
+  .back-video {
+    width: 100%;
+    height: auto;
+  }
+}
+@media (max-aspect-ratio: 16/9) {
+  .back-video {
+    width: auto;
+    height: 100%;
+  }
+}
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  bottom: 2px;
+}
+.form-box {
+  padding: 10px;
+  border-radius: 5px;
+  background: #2e2e2e;
+  box-shadow: 10px 10px 15px #4e4e4e, -10px -10px 15px rgb(20, 20, 20);
+  bottom: 10px;
+}
+.form-box input {
+  font-size: 18px;
+  color: #000;
+  padding: 15px 10px;
+  border: none;
+  outline: none;
+  background: #383838;
+}
+.form-box button {
+  color: #383838;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background: #000;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-box button:hover {
+  background: rgba(12, 3, 51, 0.3);
+}
+
+.subscribe {
+  font-size: 20px;
+  color: #fff;
+  bottom: 15px;
+}
+
+.link-home {
+  color: #ffffff;
+  padding: 15px 20px;
+  font-size: 20px;
+  border: none;
+  border-radius: 5px;
+  background: rgb(63, 63, 63);
+  cursor: pointer;
+  transition: 0.3s;
+  border-top: 5px solid #000000;
+  border-bottom: 5px solid #000000;
+  border-left: 5px solid #000000;
+  border-right: 5px solid #000000;
+}
+
+.videos {
+  padding: 15px 20px;
+}
